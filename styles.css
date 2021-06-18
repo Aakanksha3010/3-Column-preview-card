@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body,button{
+    font-family: "Lexend Deca",sans-serif;
+
+}
+
+h3{
+    font-family: "Big Shoulder Display",sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 20px;
+    
+}
+
+p{
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    
+}
+
+.container{
+    padding:20px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+     */
+
+}
+.card{
+    padding:30px;
+    color:white;
+    border-radius: 10px 10px 10x 10px;
+}
+
+.container .card .section-1{
+    background-color: var(--bright-orange);
+    padding:30px;
+    border-radius: 10px 10px 0 0;
+    
+    
+}
+.card img{
+    margin-bottom: 25px;
+}
+
+
+.container .card .section-2{
+    background-color: var(--dark-cyan);
+    padding:30px;
+}
+
+.container .card .section-3{
+    background-color: var(--very-dark-cyan);
+    padding:30px;
+    border-radius: 0 0 10px 10px;
+}
+
+#btn-1{
+    border: 2px solid white;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px 20px;
+    color: var(--bright-orange);
+    cursor: pointer;
+}
+#btn-1:hover{
+    background-color: transparent;
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+
+#btn-2{
+    color: var(--dark-cyan);
+    text-align: center;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#btn-2:hover{
+    background-color: transparent;
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+
+#btn-3{
+    color: var(--very-dark-cyan);
+    text-align: center;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    
+}
+#btn-3:hover{
+    background-color: transparent;
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+    color: black;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* desktop view */
+@media (min-width: 992px) {
+    .container .card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        max-width: 900px;
+        margin: auto;
+        /* flex-direction: column; */
+    }
+    .container .card .section-1{
+        background-color: var(--bright-orange);
+        padding:30px;
+        border-radius: 10px 0 0 10px;  
+    }
+    .container .card .section-3{
+        background-color: var(--very-dark-cyan);
+        padding:30px;
+        border-radius: 0 10px 10px 0;
+    }
+    
+    p{
+        margin-bottom: 80px;
+    }
+
+    .card{
+        padding: 50px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
